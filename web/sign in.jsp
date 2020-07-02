@@ -7,7 +7,7 @@
     </title>
 </head>
 <body bgcolor="#e3e3e3">
-    <form action="check.jsp" method="post">
+    <form action="Is ture.jsp" method="post">
         <table>
             <caption>用户登录</caption>
             <tr><td>用户名:</td><td><input type="text" name="username" size="20"/></td></tr>

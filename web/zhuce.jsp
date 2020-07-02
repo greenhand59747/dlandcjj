@@ -49,7 +49,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <center>
     <body bgcolor="#e3e3e3">
     <h2>用户注册</h2>
-    <form action="check2.jsp" method="post" onSubmit="return isValid(this);">
+    <form action="zhc chg.jsp" method="post" onSubmit="return isValid(this);">
         <table>
             <tr><td>用户名:</td><td><input type="text" name="username" size="20"/></td></tr>
             <tr><td>输入密码:</td><td><input type="text" name="pwd" size="20"/></td></tr>
