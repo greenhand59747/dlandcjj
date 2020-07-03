@@ -22,6 +22,8 @@
 </head>
 
 <body>
+<h1>注册成功!!请单击<a href="sign in.jsp">这里</a>返回登录</h1>
+
 <br>
 <%
     request.setCharacterEncoding("utf-8");
@@ -30,11 +32,8 @@
 %>
 <%
     String driver = "com.mysql.jdbc.Driver";
-    String url = "jdbc:mysql://localhost:3306/yonghu";
-    String use = "root";
-    String password = "9540";
     Class.forName(driver);
-    Connection conn= DriverManager.getConnection(url,use,password);
+    Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/yonghu?serverTimezone=GMT","root","9540");
     PreparedStatement sql =conn.prepareStatement("insert into user_zm(user,pass)values(?,?)");
     sql.setString(1,user);
     sql.setString(2,pass);
