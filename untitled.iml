@@ -31,5 +31,15 @@
     </orderEntry>
     <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 8.5.56" level="application_server_libraries" />
     <orderEntry type="library" exported="" name="111" level="project" />
+    <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/tomcat/apache-tomcat-8.5.56/lib/mysql-connector-java-8.0.20.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
