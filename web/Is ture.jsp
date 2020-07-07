@@ -8,7 +8,7 @@
 <html>
 <head>
     <base href="<%=basePath%>">
-    <title>My JSP 'check.jsp' starting page</title>
+    <title>My JSP 'Is ture.jsp' starting page</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
@@ -28,7 +28,6 @@
     ResultSet rs=null;
     Connection conn=null;
 %>
-
 <%
     String driver = "com.mysql.jdbc.Driver";
     Class.forName(driver);

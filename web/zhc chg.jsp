@@ -22,24 +22,31 @@
 </head>
 
 <body>
-<h1>注册成功!!请单击<a href="sign in.jsp">这里</a>返回登录</h1>
-
 <br>
 <%
     request.setCharacterEncoding("utf-8");
-    String user=request.getParameter("username");
+    String use=request.getParameter("username");
     String pass=request.getParameter("pwd");
+    ResultSet rs=null;
+    PreparedStatement db=null;
 %>
 <%
     String driver = "com.mysql.jdbc.Driver";
     Class.forName(driver);
-    Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/yonghu?serverTimezone=GMT","root","9540");
-    PreparedStatement sql =conn.prepareStatement("insert into user_zm(user,pass)values(?,?)");
-    sql.setString(1,user);
-    sql.setString(2,pass);
-    int rtn=sql.executeUpdate();
-    sql.close();
-    conn.close();
+    Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/yonghu?serverTimezone=GMT", "root","9540");
+    Statement yz= conn.createStatement();
+    rs=yz.executeQuery("SELECT count(*) from user_zm WHERE user=' " +use+"' ");
+    if (rs.next()){
+        PreparedStatement sql =conn.prepareStatement("insert into user_zm(user,pass)values(?,?)");
+        sql.setString(1,use);
+        sql.setString(2,pass);
+        int rtn=sql.executeUpdate();
+        sql.close();
+        conn.close();
+        out.print("注册成功");
+    }else{
+        out.print("用户名已存在");
+    }
 %>
 </body>
 </html>

@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Fairy Tail
-  Date: 2020/6/29
-  Time: 10:59
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
@@ -29,7 +23,7 @@
 
 </head>
 
-<body>
+<body bgcolor="#7fffd4">
 <% out.println("登录失败");%>
 <% response.setHeader("refresh","5;url=sign in.jsp");%>
 </body>
