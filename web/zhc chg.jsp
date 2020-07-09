@@ -18,10 +18,20 @@
     <!--
     <link rel="stylesheet" type="text/css" href="styles.css">
     -->
-
+    <style type="text/css">
+        .jz{
+            color: red;
+            position: absolute;
+            top:30%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            font-size:xx-large;
+            color: red;
+        }
+    </style>
 </head>
 
-<body>
+<body bgcolor="#7fffd4" class="jz">
 <br>
 <%
     request.setCharacterEncoding("utf-8");
@@ -34,19 +44,13 @@
     String driver = "com.mysql.jdbc.Driver";
     Class.forName(driver);
     Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/yonghu?serverTimezone=GMT", "root","9540");
-    Statement yz= conn.createStatement();
-    rs=yz.executeQuery("SELECT count(*) from user_zm WHERE user=' " +use+"' ");
-    if (rs.next()){
         PreparedStatement sql =conn.prepareStatement("insert into user_zm(user,pass)values(?,?)");
         sql.setString(1,use);
         sql.setString(2,pass);
         int rtn=sql.executeUpdate();
         sql.close();
         conn.close();
-        out.print("注册成功");
-    }else{
-        out.print("用户名已存在");
-    }
 %>
+注册成功<a href="sign in.jsp">返回登陆</a>
 </body>
 </html>
