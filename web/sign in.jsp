@@ -20,7 +20,6 @@
         }
     </style>
 </head>
-
 <body bgcolor="#7fffd4" class="jz">
 <form action="Is ture.jsp" method="post">
 <table>

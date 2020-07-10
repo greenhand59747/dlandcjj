@@ -1,15 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Fairy Tail
-  Date: 2020/6/28
-  Time: 12:48
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
     <html>
     <head>
@@ -20,9 +12,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <meta http-equiv="expires" content="0">
         <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
         <meta http-equiv="description" content="This is my page">
-        <!--
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        -->
         <script language="javascript">
             function isValid(form)
             {
@@ -59,7 +48,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             }
         </style>
     </head>
-
  <body bgcolor="#7fffd4" class="jz">
  <center>
     <h2>用户注册</h2>

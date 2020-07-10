@@ -51,7 +51,6 @@
 <script type="text/javascript" >
     var num1='<%=session.getAttribute("number")%>' ;
     var n='<%=n+1%>';
-
     function ale(){
         var num2=document.getElementById("g").value;
         if(num1==num2){

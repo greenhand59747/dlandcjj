@@ -1,4 +1,3 @@
-
 <%@ page language="java" import="java.sql.*" contentType="text/html;charset=utf-8"%>
 <%
     String path = request.getContextPath();
@@ -14,9 +13,6 @@
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
-    <!--
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    -->
 </head>
 <body>
 <%
