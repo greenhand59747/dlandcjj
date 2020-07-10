@@ -38,7 +38,6 @@
     String use=request.getParameter("username");
     String pass=request.getParameter("pwd");
     ResultSet rs=null;
-    PreparedStatement db=null;
 %>
 <%
     String driver = "com.mysql.jdbc.Driver";

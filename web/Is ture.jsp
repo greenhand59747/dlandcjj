@@ -52,3 +52,4 @@ if (flag==false){
 <jsp:forward page="cuowu.jsp"/>
 <%} %>
 </body>
+</html>
