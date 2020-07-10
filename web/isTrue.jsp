@@ -64,11 +64,6 @@
         else if(num1<num2){
             alert("猜大了");
         }
-        if(n==10){
-            alert("游戏结束！")
-            window.location.href='cjj.jsp';
-            window.event.returnValue=false;
-        }
     }
 </script>
 <%

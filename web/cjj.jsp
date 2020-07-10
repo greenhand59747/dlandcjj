@@ -25,7 +25,7 @@
 <body bgcolor="#7fffd4">
 <h1 style="color: blue" align="center">欢迎来到猜数字小游戏</h1>
 <h2 style="color: red " align="center">这仅仅是考验运气和技巧的游戏，请不要沉迷哦！！！</h2><br>
-<p class="a" size="24">游戏会给出1-100间的随机数字，请猜出这个数字。您有10次机会。</p><br>
+<p class="a" size="24">游戏会给出1-100间的随机数字，请猜出这个数字。看看谁的次数最少</p><br>
 <form action="isTrue.jsp">
     <p class="a"><input class="an"  type="submit" value="开始游戏"/></p>
 </form>
