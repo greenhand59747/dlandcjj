@@ -38,15 +38,15 @@
     <p class="a"><input class="an" type="submit" value="提交" onclick="ale()"/></p>
 </form>
 <%
-    int num1,num2=0,n;
+    int num2=0;
     Integer str1=(Integer)session.getAttribute("number");
     Integer n1=(Integer)session.getAttribute("count");
     String str2=request.getParameter("guess");
     if(str2!=null){
         num2=Integer.parseInt(str2);
     }
-    num1=Integer.valueOf(str1);
-    n=Integer.valueOf(n1);
+    int num1=Integer.valueOf(str1);
+    int n=Integer.valueOf(n1);
 %>
 <script type="text/javascript" >
     var num1='<%=session.getAttribute("number")%>' ;
